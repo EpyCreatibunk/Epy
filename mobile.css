@@ -1,0 +1,102 @@
+/* RESET MOBILE */
+body {
+    font-size: 14px;
+}
+
+/* NAVBAR SIMPEL */
+nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.menu {
+    display: none; /* kita sembunyikan menu */
+}
+
+/* HERO FULL CLEAN */
+.hero {
+    padding: 120px 15px 60px;
+}
+
+.home-box {
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 24px;
+}
+
+.desc {
+    font-size: 13px;
+}
+
+.btn-cv {
+    width: 100%;
+    text-align: center;
+}
+
+/* ABOUT STACK */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-img img {
+    width: 150px;
+    margin: auto;
+}
+
+.about-text h1 {
+    font-size: 26px;
+}
+
+.about-text p {
+    font-size: 13px;
+    text-align: center;
+}
+
+/* SKILLS jadi LIST (bukan grid) */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skill-card {
+    padding: 15px;
+}
+
+.skill-card img {
+    width: 45px;
+}
+
+/* PROJECT jadi horizontal scroll */
+.slide-track {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+.card {
+    min-width: 170px;
+}
+
+/* CONTACT stack */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.input-box {
+    flex-direction: column;
+}
+
+/* FOOTER */
+footer {
+    font-size: 12px;
+}
