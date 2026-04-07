@@ -1,102 +1,80 @@
-/* RESET MOBILE */
-body {
-    font-size: 14px;
+/* ================= MOBILE FIX ONLY ================= */
+@media (max-width: 768px){
+
+    .home-box,
+    .project-box {
+        width: 92% !important;
+        margin: auto;
+    }
+}
+    html, body {
+    overflow-x: hidden;
 }
 
-/* NAVBAR SIMPEL */
-nav {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px 15px;
-}
+    /* 🔥 KURANGI PADDING BIAR NAFAS */
+    .home-box{
+        padding: 30px 20px !important;
+    }
 
-.menu {
-    display: none; /* kita sembunyikan menu */
-}
+    .project-box{
+        padding: 25px 15px !important;
+    }
 
-/* HERO FULL CLEAN */
-.hero {
-    padding: 120px 15px 60px;
-}
+    /* 🔥 NAVBAR BIAR GAK SUMPEK */
+    .menu{
+        display: none !important;
+    }
 
-.home-box {
-    padding: 20px;
+    nav{
+        padding: 10px 15px;
+    }
+
+    /* 🔥 HERO */
+    .hero h1{
+        font-size: 28px !important;
+    }
+
+    .desc{
+        font-size: 14px;
+    }
+
+    /* 🔥 ABOUT JADI STACK */
+    .about-container{
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-img img{
+        max-width: 200px;
+        margin: auto;
+    }
+
+    /* 🔥 SKILL JADI 1 KOLOM */
+    .skills-container{
+        grid-template-columns: 1fr !important;
+    }
+
+    /* 🔥 PROJECT SLIDE ENAK */
+    .card{
+    min-width: 220px;
+    scroll-snap-align: start;
+}
+    .card img{
     width: 100%;
-    border-radius: 15px;
+    height: auto; /* 🔥 ini penting */
+    object-fit: contain; /* biar gak kepotong */
 }
 
-.hero h1 {
-    font-size: 24px;
-}
+    /* 🔥 CONTACT */
+    .contact-container{
+        grid-template-columns: 1fr !important;
+    }
 
-.desc {
-    font-size: 13px;
-}
-
-.btn-cv {
-    width: 100%;
-    text-align: center;
-}
-
-/* ABOUT STACK */
-.about-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.about-img img {
-    width: 150px;
-    margin: auto;
-}
-
-.about-text h1 {
-    font-size: 26px;
-}
-
-.about-text p {
-    font-size: 13px;
-    text-align: center;
-}
-
-/* SKILLS jadi LIST (bukan grid) */
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.skill-card {
-    padding: 15px;
-}
-
-.skill-card img {
-    width: 45px;
-}
-
-/* PROJECT jadi horizontal scroll */
-.slide-track {
-    display: flex;
+    .input-box{
+        flex-direction: column;
+    }
+.slide-track{
     overflow-x: auto;
-    gap: 15px;
-}
-
-.card {
-    min-width: 170px;
-}
-
-/* CONTACT stack */
-.contact-container {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-}
-
-.input-box {
-    flex-direction: column;
-}
-
-/* FOOTER */
-footer {
-    font-size: 12px;
+    scroll-snap-type: x mandatory;
 }
