@@ -1,0 +1,620 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HTML */
+html{
+scroll-behavior:smooth;
+}
+
+/* BODY */
+body{
+background:#fff;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:5px 30px;
+border-bottom:1px solid #ddd;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+}
+
+/* LOGO */
+.logo{
+width:65px;
+height:65px;
+border-radius:50%;
+overflow:hidden;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.logo img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* MENU */
+.menu{
+list-style:none;
+display:flex;
+gap:20px;
+background:#e6e1d8;
+padding:6px 20px;
+border-radius:30px;
+align-items:center;
+}
+
+.menu a{
+text-decoration:none;
+color:#5E0006;
+font-size:18px;
+font-weight:600;
+}
+
+.menu a:hover{
+color:#D25D5D;
+}
+
+/* SECTION */
+section{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+padding-top:80px;
+}
+
+/* HERO */
+.hero{
+background: linear-gradient(135deg, #900C27, #C70039);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+padding:100px 20px 60px; 
+}
+
+.home-box{
+background:#e6e1d8;
+padding:80px 60px;
+border-radius:20px;
+border:3px solid #C70039;
+width:85%;
+max-width:950px;
+text-align:center;
+box-shadow:0 20px 50px rgba(0,0,0,0.25);
+animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.top-text{
+font-size:18px;
+margin-bottom:15px;
+color:#900C27;
+font-weight:600;
+letter-spacing:1px;
+}
+
+.hero h1{
+font-size:55px;
+line-height:1.2;
+color:#111;
+margin-bottom:20px;
+}
+
+.highlight{
+color:#900C27;
+font-weight:bold;
+}
+
+.desc{
+font-size:16px;
+color:#444;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+.btn-cv{
+background:#900C27;
+color:white;
+padding:14px 35px;
+border-radius:30px;
+border:none;
+cursor:pointer;
+font-size:16px;
+transition:0.3s;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.btn-cv:hover{
+background:#C70039;
+transform:translateY(-3px) scale(1.05);
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+.job-list{
+margin:20px 0;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:8px; /* lebih rapat */
+}
+
+.job-list span{
+background:#900C27;
+color:white;
+padding:5px 12px; 
+border-radius:15px;
+font-size:12px; 
+transition:0.3s;
+}
+
+.job-list span:hover{
+background:#C70039;
+transform:scale(1.08);
+}
+
+/* SOCIAL */
+.social{
+    margin-top:40px;
+    display:flex;
+    gap:25px;
+    justify-content:center;
+}
+
+.social a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:45px;
+    height:45px;
+    background:#fff;
+    border-radius:50%;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.social i{
+    font-size:28px;
+    color:#333;
+}
+
+.social a:hover{
+    background:#8C1007;
+    transform:scale(1.1);
+}
+
+.social a:hover i{
+    color:#fff;
+}
+/* SECTION UMUM */
+.section{
+text-align:center;
+padding:40px;
+}
+
+/* ABOUT */
+.about{
+background:#f5f5f5;
+}
+
+.about-container{
+display:grid;
+grid-template-columns:1fr 1.5fr;
+gap:50px;
+align-items:center;
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+.about-img img{
+width:100%;
+max-width:320px;
+border-radius:30px;
+}
+
+.about-text{
+max-width:600px;
+}
+
+.about-text h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.about-text p{
+margin-bottom:15px;
+color:#444;
+line-height:1.6;
+text-align:justify;
+font-size: 18px;
+}
+
+/* ================= SKILLS ================= */
+
+/* SKILLS SECTION */
+.skills-section{
+background:#E8E2D8;
+padding-top:120px;
+text-align:center;
+}
+
+/* WRAPPER BOX (judul + isi) */
+.skill-box-wrapper{
+background:#e6e1d8;
+padding:30px;
+border-radius:15px;
+margin:30px auto;
+width:90%;
+max-width:1000px;
+}
+
+/* HARD SKILL GRID */
+.skills-container{
+display:grid;
+grid-template-columns:repeat(3, 1fr);
+gap:20px;
+}
+
+/* CARD */
+.skill-card{
+background:#fff;
+padding:20px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.skill-card p{
+text-align:justify;
+line-height:1.6;
+}
+
+.skill-card:hover{
+transform:translateY(-5px);
+}
+
+/* ICON */
+.skill-card img{
+width:60px;
+height:60px;
+margin-bottom:10px;
+}
+
+@media (max-width:768px){
+
+.skills-container{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media (max-width:480px){
+
+.skills-container,
+.soft-container{
+grid-template-columns:1fr;
+}
+
+}
+/* ================= CONTACT UPGRADE ================= */
+
+.contact{
+background:linear-gradient(135deg,#ECE7D1,#E8E2D8);
+padding:80px 0;
+}
+
+/* CONTAINER */
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:40px;
+width:90%;
+max-width:1100px;
+margin:auto;
+padding:40px;
+border-radius:20px;
+background:#ffffff;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* ================= LEFT ================= */
+
+.contact-left{
+text-align:left;
+padding:20px;
+background:#8C1007;
+color:#fff;
+border-radius:15px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.contact-left h2{
+font-size:30px;
+margin-bottom:15px;
+}
+
+.contact-left p{
+margin-bottom:10px;
+line-height:1.6;
+color:#f1f1f1;
+}
+
+.contact-left h3{
+margin-top:20px;
+margin-bottom:10px;
+}
+
+/* SOCIAL ICON */
+.contact-social{
+margin-top:15px;
+display:flex;
+gap:15px;
+}
+
+.contact-social i{
+font-size:20px;
+background:#fff;
+color:#8C1007;
+padding:10px;
+border-radius:50%;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-social i:hover{
+background:#000;
+color:#fff;
+transform:scale(1.1);
+}
+
+/* ================= RIGHT FORM ================= */
+
+.contact-right{
+background:#f9f9f9;
+padding:25px;
+border-radius:15px;
+}
+
+/* FORM */
+.contact-right form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+/* 2 INPUT */
+.input-box{
+display:flex;
+gap:15px;
+}
+
+.input-box input{
+flex:1;
+}
+
+/* INPUT */
+.contact-right input,
+.contact-right textarea{
+padding:14px;
+border:1px solid #ddd;
+border-radius:10px;
+outline:none;
+font-size:14px;
+transition:0.3s;
+}
+
+/* FOCUS */
+.contact-right input:focus,
+.contact-right textarea:focus{
+border-color:#8C1007;
+box-shadow:0 0 8px rgba(140,16,7,0.2);
+}
+
+/* TEXTAREA */
+.contact-right textarea{
+min-height:140px;
+resize:none;
+}
+
+/* BUTTON */
+.contact-right .btn{
+background:#8C1007;
+color:#fff;
+padding:14px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+font-weight:600;
+transition:0.3s;
+}
+
+.contact-right .btn:hover{
+background:#6e0c05;
+transform:scale(1.05);
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+.input-box{
+flex-direction:column;
+}
+
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:#fff;
+font-size:14px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+
+.about-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.about-text p{
+text-align:center;
+}
+
+.skills-wrapper{
+grid-template-columns:1fr;
+}
+
+.skills-container{
+grid-template-columns:1fr 1fr;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+.input-row{
+flex-direction:column;
+}
+
+}
+
+@media (max-width:480px){
+.skills-container{
+grid-template-columns:1fr;
+}
+}
+
+/* PROJECT */
+.project{
+background: linear-gradient(135deg, #900C27, #C70039);
+display:flex;
+justify-content:center;
+padding:120px 20px 80px;
+}
+
+.project-box{
+background:#e6e1d8;
+padding:50px 40px;
+border-radius:20px;
+border:3px solid #C70039;
+width:85%;
+max-width:1100px;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,0.2);
+}
+
+.project-box h2{
+margin-bottom:10px;
+}
+
+.project-box p{
+margin-bottom:35px;
+color:#333;
+}
+
+/* SLIDER */
+.slider{
+overflow:hidden;
+}
+
+/* TRACK */
+.slide-track{
+display:flex;
+gap:20px;
+overflow-x:auto;
+scroll-behavior:smooth;
+padding:10px;
+
+/* 🔥 ini bikin feel slider */
+scroll-snap-type:x mandatory;
+}
+
+/* card */
+.card{
+min-width:280px;
+background:white;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+overflow:hidden;
+flex-shrink:0;
+transition:0.3s;
+
+/* 🔥 ini bikin berhenti per card */
+scroll-snap-align:start;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card h3{
+padding:12px;
+font-size:15px;
+}
+
+/* scrollbar tipis biar tetap ada */
+.slide-track::-webkit-scrollbar{
+height:6px;
+}
+
+.slide-track::-webkit-scrollbar-thumb{
+background:#900C27;
+border-radius:10px;
+}
+
+.link-project {
+    color: black;
+    text-decoration: none;
+}
+
+.link-project:hover {
+    color: #ff4d6d; /* biar ada efek pas di hover */
+}
